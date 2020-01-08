@@ -3,14 +3,17 @@
 // - Variables
 // - Functions
 
-// Mary is buying apples. One apple usually costs 2 Rustbucks, but if you buy
+// Mary is buying apples. One apple usually costs 2 dollars, but if you buy
 // more than 40 at once, each apple only costs 1! Write a function that calculates
 // the price of an order of apples given the order amount. No hints this time!
 
-// I AM NOT DONE
+// // I AM NOT DONE
 
 // Put your function here!
 // fn ..... {
+fn calculate_apple_price(num_apples: i32) -> i32 {
+    return if num_apples <= 40 { 2 * num_apples } else { num_apples };
+}
 
 // Don't modify this function!
 #[test]
